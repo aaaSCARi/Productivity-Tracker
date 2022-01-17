@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    android:background="@drawable/activbg1"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/texttitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#FFF6E9"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="Please enter the details below:"
+        android:textSize="24dp" />
+
+    <EditText
+        android:id="@+id/name"
+        android:layout_width="389dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/texttitle"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="8dp"
+        android:hint="Subject Name"
+        android:inputType="textPersonName"
+        android:textSize="24dp" />
+
+    <EditText
+        android:id="@+id/contact"
+        android:layout_width="392dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/name"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="-3dp"
+        android:layout_marginEnd="9dp"
+
+        android:hint="Number of Sessions completed"
+        android:inputType="number"
+        android:textSize="24dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="9dp" />
+
+    <EditText
+        android:id="@+id/dob"
+        android:layout_width="382dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/contact"
+        android:layout_marginTop="13dp"
+        android:hint="*Difficulty Level:"
+        android:inputType="number"
+        android:textSize="24dp" />
+
+    <Button
+        android:id="@+id/btnInsert"
+        android:layout_width="382dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/dob"
+        android:layout_centerHorizontal="true"
+        android:backgroundTint="#FD81B9E6"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/roundedbutton"
+        android:text="Insert New Data"
+        android:textSize="24dp" />
+
+    <Button
+        android:id="@+id/btnUpdate"
+        android:layout_width="382dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnInsert"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="14dp"
+        android:backgroundTint="#FD81B9E6"
+        android:background="@drawable/roundedbutton"
+        android:text="Update Existing Data"
+        android:textSize="24dp" />
+
+
+    <Button
+        android:id="@+id/btnDelete"
+        android:layout_width="382dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnUpdate"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="14dp"
+        android:backgroundTint="#FD81B9E6"
+        android:background="@drawable/roundedbutton"
+        android:text="Delete Existing Data"
+        android:textSize="24dp" />
+
+    <Button
+        android:id="@+id/btnView"
+        android:layout_width="387dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnDelete"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="9dp"
+        android:layout_marginTop="17dp"
+        android:layout_marginEnd="15dp"
+        android:backgroundTint="#FD81B9E6"
+        android:background="@drawable/roundedbutton"
+        android:text="View Data"
+        android:textSize="24dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="9dp"
+        android:layout_marginRight="15dp" />
+
+    <Button
+        android:id="@+id/btnViewtwo"
+        android:layout_width="371dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnView"
+        android:layout_alignStart="@+id/btnView"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="-9dp"
+        android:layout_marginTop="18dp"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/roundedbutton"
+        android:backgroundTint="#FD81B9E6"
+        android:text="View Progress"
+        android:textSize="24dp"
+        android:layout_alignLeft="@+id/btnView"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="-9dp"
+        android:layout_marginRight="20dp" />
+
+    <EditText
+        android:id="@+id/edittext1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnViewtwo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="44dp"
+        android:layout_marginEnd="16dp"
+        android:background="#0000ffff"
+        android:hint="reenter"
+        android:textColorHint="#0000ffff" />
+
+    <EditText
+        android:id="@+id/edittext2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edittext1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="16dp"
+        android:background="#0000ffff "
+        android:hint="reenter2"
+        android:textColorHint="#0000ffff" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="680dp"
+        android:layout_marginLeft="100dp"
+        android:text="*1. Easy, *2.Medium, *3.Tough"
+        android:textColor="@color/white"
+        android:layout_marginRight="16dp" />
+
+</RelativeLayout>
